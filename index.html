@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Ibuk 🌸</title>
+  <meta name="description"
+    content="Selamat Ulang Tahun untuk Ibuk Nikmatur Rohmah tersayang — dengan cinta dan doa tulus dari anakmu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Splash Screen -->
+  <div id="splash-screen" class="splash-screen">
+    <div class="splash-heart">💖</div>
+    <div class="splash-text">Menyiapkan kejutan untuk Ibuk tersayang...</div>
+  </div>
+  <!-- Sakura Canvas -->
+  <canvas id="sakura-canvas"></canvas>
+
+  <div id="scroll-hint" class="scroll-hint" hidden>
+    Scroll ke bawah <span aria-hidden="true">↓</span>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-bg-glow glow-3"></div>
+    <div class="hero-content">
+      <div class="badge-top animate-float">🌸 29 September 1979 - 2026 🌸</div>
+      <h1 class="hero-title">
+        <span class="title-line-1">Selamat</span>
+        <span class="title-line-2">Ulang Tahun</span>
+        <span class="title-line-3">Ibuk</span>
+        <span class="title-line-4">Nikmatur Rohmah</span>
+      </h1>
+      <p class="hero-subtitle">Selamat Ulang Tahun yang ke-47!<br>Terima kasih telah menjadi cahaya dalam hidupku.
+        Semoga kebahagiaan selalu menyertaimu
+        dan diberi panjang umur.</p>
+      <div class="heart-row">
+        <span class="heart animate-bounce-1">💖</span>
+        <span class="heart animate-bounce-2">🌸</span>
+        <span class="heart animate-bounce-3">💖</span>
+      </div>
+      <a href="#lights" class="btn-scroll">Klik untuk lihat Lebih ↓</a>
+    </div>
+    <div class="hero-sparkles" id="hero-sparkles"></div>
+  </section>
+
+  <!-- Tombol matikan lampu sebelum kue -->
+  <div class="wish-btn-wrapper" id="lights">
+    <div class="wish-instruction">
+      <span class="wish-instruction-icon" aria-hidden="true">🌙</span>
+      <h2>Sebelum melihat kuenya...</h2>
+      <p>Matikan lampu terlebih dahulu agar cahaya lilin dan kejutan ulang tahunnya terlihat lebih indah.</p>
+      <button id="wish-toggle" class="wish-inline-btn" type="button">🌙 Matikan Lampu Sekarang</button>
+    </div>
+  </div>
+
+  <!-- Cake Section -->
+  <section class="cake-section" id="cake">
+    <div class="section-header">
+      <span class="section-tag">✨ Spesial Untukmu</span>
+      <h2 class="section-title">Kue Ulang Tahunmu</h2>
+      <p class="section-desc">Ayo tiup lilinya ibukkkkk</p>
+    </div>
+    <div class="cake-container">
+      <div class="cake-glow-ring"></div>
+      <div class="css-cake" id="css-cake">
+        <div class="plate"></div>
+        <div class="layer layer-bottom"></div>
+        <div class="layer layer-middle"></div>
+        <div class="layer layer-top">
+          <div class="icing"></div>
+          <div class="drip drip1"></div>
+          <div class="drip drip2"></div>
+          <div class="drip drip3"></div>
+          <div class="candle candle1">
+            <div class="flame"></div>
+          </div>
+          <div class="candle candle2">
+            <div class="flame"></div>
+          </div>
+          <div class="candle candle3">
+            <div class="flame"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cake-sparkles" id="cake-sparkles"></div>
+    </div>
+    <div class="candle-count">
+      <div class="candle-item" id="blow-btn">
+        <span class="candle-icon">🕯️</span>
+        <span class="candle-text">Selamat Ulang Tahun, Ibuk! 🌸</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Section -->
+  <section class="message-section" id="message">
+    <div class="message-card glass-card">
+      <div class="quote-mark left">"</div>
+      <p class="message-text">
+        Ibuku Nikmatur Rohmah, menemaniku sejak tahun 2007 (bahkan sejak aku masih dalam kandungan), setiap langkah
+        hidupku selalu ada jejakmu di sana. Kasih sayangmu adalah tanah tempatku berpijak, dan cintamu adalah langit
+        yang selalu menaungi. Hari ini bukan hanya tentang usiamu yang bertambah, tapi tentang betapa berharganya dirimu
+        bagi kami semua. Ibuk telah mendidik dan mendukungku sampai sekarang akhirnya aku bisa kuliah di UI,Terimakasih 
+        ibu mungkin anakmu belum bisa memberikan yang terbaik dan belum bisa memberikan hadiah yang besar.
+        <br /><br />
+        Semoga Allah selalu menjaga kesehatanmu, memberimu kebahagiaan yang tiada tara, dan memanjangkan umurmu dalam
+        keberkahan, aku selalu mendoakanmu ibukk.
+        <br /><br />
+        <em>I love you more than words can say, Ibuk. 💖</em>
+      </p>
+      <div class="quote-mark right">"</div>
+      <div class="message-signature">— Dari anakmu tercinta, Bintang 🌸</div>
+    </div>
+  </section>
+
+  <!-- Special Gift Section -->
+  <section class="special-gift-section" id="gift">
+    <div class="section-header">
+      <span class="section-tag">🎁 Kejutan Spesial</span>
+      <h2 class="section-title">Kado dari Bintang</h2>
+      <p class="section-desc">Karena 19 tahun bersamamu adalah anugerah terbesar.</p>
+    </div>
+
+    <div class="gift-grid">
+      <!-- Voice Note -->
+      <div class="voice-note-card glass-card">
+        <div class="card-content-wrapper">
+          <div class="vn-icon pulse-anim">🎙️</div>
+          <h3>Pesan Suara</h3>
+          <p>Ada pesan suara langsung untuk Ibuk</p>
+        </div>
+        <button id="vn-btn" class="vn-play-btn" style="margin-top: auto; width: 100%;">▶️ Putar Pesan</button>
+        <!-- TODO: GANTI SRC DENGAN FILE REKAMAN SUARAMU -->
+        <audio id="vn-audio" src="vnbintang.mp3"></audio>
+      </div>
+
+      <!-- Kado Interaktif -->
+      <div class="gift-box-card glass-card" id="gift-card">
+        <div class="gift-closed" id="gift-closed"
+          style="display: flex; flex-direction: column; height: 100%; width: 100%;">
+          <div class="card-content-wrapper">
+            <div class="gift-emoji shake-anim">🎁</div>
+            <p style="font-family: var(--font-display); color: var(--pink-600); font-size: 1.1rem; margin-bottom: 0;">
+              Kira-kira apa ya isinya? Coba buka deh!</p>
+          </div>
+          <button id="open-gift-btn" class="vn-play-btn" style="margin-top: auto; width: 100%;">Buka Kado</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photos Section -->
+  <section class="photos-section" id="photos">
+    <div class="section-header">
+      <span class="section-tag">📸 Kenangan Indah</span>
+      <h2 class="section-title">Momen Bersama Ibuk</h2>
+      <p class="section-desc">Setiap foto menyimpan kenangan yang tak ternilai harganya.</p>
+    </div>
+
+    <!-- Foto Utama -->
+    <div class="hero-photo-wrapper animate-in" style="--delay: 0.1s">
+      <div class="photo-frame frame-hero" style="overflow: visible;">
+        <div class="heart-pin">💖</div>
+        <div class="photo-inner" style="border-radius: var(--radius-md);">
+          <!-- TODO: GANTI SRC DI BAWAH DENGAN LOKASI FOTO UTAMA IBUK (contoh: "foto1.jpg") -->
+          <img class="photo-preview static-preview"
+            src="utama.jpeg"
+            alt="Foto Utama Ibuk" style="border-radius: var(--radius-md);" />
+        </div>
+      </div>
+      <div class="hero-photo-quote">
+        "Ibuk adalah malaikat tak bersayap yang Tuhan kirimkan untukku. Kehadiranmu adalah anugerah terindah dalam
+        hidupku."
+      </div>
+    </div>
+
+    <div class="photos-grid">
+      <!-- Photo 2 -->
+      <div class="photo-frame animate-in" style="--delay: 0.2s">
+        <div class="photo-inner">
+          <!-- TODO: GANTI SRC DI BAWAH DENGAN LOKASI FOTOMU -->
+          <img class="photo-preview static-preview" src="k1.jpeg"
+            alt="Foto Kenangan 2" />
+        </div>
+        <div class="photo-caption">Momen Indah 🌸</div>
+      </div>
+
+      <!-- Photo 3 -->
+      <div class="photo-frame animate-in" style="--delay: 0.3s">
+        <div class="photo-inner">
+          <!-- TODO: GANTI SRC DI BAWAH DENGAN LOKASI FOTOMU -->
+          <img class="photo-preview static-preview" src="k2.jpeg"
+            alt="Foto Kenangan 3" />
+        </div>
+        <div class="photo-caption">Senyummu Terindah 💖</div>
+      </div>
+
+      <!-- Photo 4 -->
+      <div class="photo-frame animate-in" style="--delay: 0.4s">
+        <div class="photo-inner">
+          <!-- TODO: GANTI SRC DI BAWAH DENGAN LOKASI FOTOMU -->
+          <img class="photo-preview static-preview" src="k3.jpeg"
+            alt="Foto Kenangan 4" />
+        </div>
+        <div class="photo-caption">Penuh Cinta 💕</div>
+      </div>
+
+      <!-- Photo 5 -->
+      <div class="photo-frame animate-in" style="--delay: 0.5s">
+        <div class="photo-inner">
+          <!-- TODO: GANTI SRC DI BAWAH DENGAN LOKASI FOTOMU -->
+          <img class="photo-preview static-preview" src="k4.jpeg"
+            alt="Foto Kenangan 5" />
+        </div>
+        <div class="photo-caption">Bahagia Bersamamu 🌺</div>
+      </div>
+
+      <!-- Photo 6 -->
+      <div class="photo-frame animate-in" style="--delay: 0.6s">
+        <div class="photo-inner">
+          <!-- TODO: GANTI SRC DI BAWAH DENGAN LOKASI FOTOMU -->
+          <img class="photo-preview static-preview" src="k6.jpeg"
+            alt="Foto Kenangan 6" />
+        </div>
+        <div class="photo-caption">Bersama Selamanya 🌸</div>
+      </div>
+
+      <!-- Photo 7 -->
+      <div class="photo-frame animate-in" style="--delay: 0.7s">
+        <div class="photo-inner">
+          <!-- TODO: GANTI SRC DI BAWAH DENGAN LOKASI FOTOMU -->
+          <img class="photo-preview static-preview" src="k7.jpeg"
+            alt="Foto Kenangan 7" />
+        </div>
+        <div class="photo-caption">Cinta Tak Terbatas 💝</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wishes Section -->
+  <section class="wishes-section" id="wishes">
+    <div class="section-header">
+      <span class="section-tag">🌟 Harapan and Doa</span>
+      <h2 class="section-title">Doa Untukmu, Ibuk Nikmatur Rohmah</h2>
+    </div>
+    <div class="wishes-grid">
+      <div class="wish-card glass-card animate-in" style="--delay: 0.1s">
+        <div class="wish-icon">❤️</div>
+        <h3>Kesehatan</h3>
+        <p>Semoga Ibuk selalu diberi kesehatan yang sempurna, kuat, dan bersemangat setiap harinya (Notes jangan kebanyakan makan gula!).</p>
+      </div>
+      <div class="wish-card glass-card animate-in" style="--delay: 0.2s">
+        <div class="wish-icon">✨</div>
+        <h3>Kebahagiaan</h3>
+        <p>Semoga senyum selalu menghiasi wajah Ibuk dan kebahagiaan selalu menemanimu.</p>
+      </div>
+      <div class="wish-card glass-card animate-in" style="--delay: 0.3s">
+        <div class="wish-icon">🌸</div>
+        <h3>Keberkahan</h3>
+        <p>Semoga Allah senantiasa memberkahi setiap langkah dan hari-harimu, Ibuk. Maafkan anakmu yang menganyelne ini wkwk</p>
+      </div>
+      <div class="wish-card glass-card animate-in" style="--delay: 0.4s">
+        <div class="wish-icon">💫</div>
+        <h3>Panjang Umur</h3>
+        <p>Semoga usiamu dipanjangkan dalam kebaikan dan Ibuk bisa melihat semua impianku terwujud sampai mungkin aku mempunyai cucu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-hearts">
+        <span>💖</span><span>🌸</span><span>💖</span><span>🌸</span><span>💖</span>
+      </div>
+      <p class="footer-text">Dibuat dengan ❤️ penuh cinta untuk Ibuk</p>
+      <p class="footer-sub">Happy Birthday, Ibuk Nikmatur Rohmah! Semoga selalu bahagia 🌸, Tunggu aku pulang ya!</p>
+    </div>
+    <div class="credit">
+      Muhammad Bintang Krisnanda 2026
+    </div>
+  </footer>
+
+  <!-- Blown Candle Modal -->
+  <div class="modal-overlay" id="blow-modal">
+    <div class="modal-box">
+      <div class="modal-icon">🎉</div>
+      <h2 class="modal-title">Selamat Ulang Tahun!</h2>
+      <p class="modal-msg">Semoga semua harapan dan doa Ibuk terkabul. Anakmu mencintaimu sepenuh hati! 💖🌸</p>
+      <button class="modal-close" id="modal-close-btn">Terima Kasih ✨</button>
+    </div>
+  </div>
+
+  <!-- Gift Modal -->
+  <div class="modal-overlay" id="gift-modal">
+    <div class="modal-box">
+      <!-- TODO: GANTI SRC DENGAN FOTO BINTANG -->
+      <img src="bintangcp.jpeg" alt="Bintang" class="bintang-photo"
+        style="margin: 0 auto 20px auto; display: block;" />
+      <h2 class="modal-title">Untuk Ibuk Tersayang</h2>
+      <p class="modal-msg" style="font-size: 1.15rem; font-style: italic;">"Dari calon programmer hebat anakmu,
+        Bintang."</p>
+      <button class="modal-close" id="close-gift-modal-btn">Tutup Kado 🎁</button>
+    </div>
+  </div>
+
+  <!-- Dark Overlay for Make a Wish -->
+  <div id="dark-overlay" class="dark-overlay"></div>
+
+  <!-- Musik latar diputar otomatis tanpa tombol kontrol -->
+  <audio id="bgm-audio" loop autoplay preload="auto" src="selamathbd.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
